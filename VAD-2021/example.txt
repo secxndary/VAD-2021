@@ -1,0 +1,51 @@
+script function strings (string a, string b)
+[
+	new number k;
+	k = 200;
+	new number kk;
+	kk = 100;
+	kk = kk + k;
+	print kk;
+        print "Lenght + 5:          ";
+	print k;
+	newline;
+
+	new string str;
+	str = strcopy(b);
+        print "String copy:         ";
+	print str;
+	newline;
+	return;
+]
+
+
+main
+[
+	new number x = 10;
+	new number y = 3;
+	x = x % y;
+	print "10 module 3:         ";
+	print x;
+	newline;
+
+
+	new string strx = "VAD-2021";
+	new string stry = "Course Project Test";
+        new string strz = "70";
+	strings(strx, stry);
+
+
+	print "Cycle:               ";
+	new number ab = 125;
+	criterion: ab > 1 #
+	cycle [
+		print ab;
+		print "; ";
+		ab = ab / 3;
+	] #
+	newline;
+	print "Number after cycle:  ";
+	print ab;
+	newline;
+
+]
